@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int a, b, s;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a:";
+	cin >> a;
+	cout << "Введите b:";
+	cin >> b;
+	s = (a + b) / 2;
+	cout << "Среднее арифметическое:" << s << endl;
+}
