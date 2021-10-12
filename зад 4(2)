@@ -10,4 +10,5 @@ int main()
     cin >> d;
     l = p * d;
     cout << "Длину :" << l << endl;
+    return 0;
 }
