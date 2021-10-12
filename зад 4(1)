@@ -13,5 +13,6 @@ int main()
     p = 2 * (a + b);
     cout << "Периметр: " << p << endl;
     cout << "Площадь: " << s << endl;
+    return 0;
 
 }
