@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+float a, b, s, m, u, d;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Введите a:";
+	cin >> a;
+	cout << "Введите b:";
+	cin >> b;
+	if (a and b != 0)
+	{
+		s = abs(a) + abs(b) ;
+		m = abs(a)  - abs(b) ;
+		u =  abs(a)* abs(b);
+		d = abs(a)/abs(b) ;
+		cout << "Сумма =" << s << endl;
+		cout << "Разность =" << m << endl;
+		cout << "Произведение =" << u << endl;
+		cout << "Частное =" << d << endl;
+	}
+	return 0;
+}
