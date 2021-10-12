@@ -11,4 +11,5 @@ int main()
 	cin >> b;
 	s = (a + b) / 2;
 	cout << "Среднее арифметическое =" << s << endl;
+	return 0;
 }
