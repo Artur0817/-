@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int a, b, s;
+float a, b, s;
 
 int main()
 {
