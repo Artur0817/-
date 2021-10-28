@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double x1, x2, y1, y2, a, b;
+	setlocale(LC_ALL, "Russian");
+	cout << " x1 = ";
+	cin >> x1;
+	cout << " x2 = ";
+	cin >> x2;
+	cout << " y1 = ";
+	cin >> y1;
+	cout << " y2 = ";
+	cin >> y2;
+	if ((x1 != x2) && (y1 != y2) && (abs(x1 - x2) != abs(y1 - y2)))
+	{
+		cout << "Периметр прямоугольника: " << 2 * ((abs(x1 - x2) + abs(y1 - y2))) << "\n";
+
+		cout << "Площадь прямоугольника: " << abs(x1 - x2) * abs(y1 - y2);
+	}
+	else
+		cout << "Не является прямоугольником!";
+}
