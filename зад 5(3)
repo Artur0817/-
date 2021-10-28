@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 int a, b, c, ac, bc;
-int main() 
+int main()
 {
-
 	setlocale(LC_ALL, "Russian");
 	cin >> a;
 	cout << " a = ";
@@ -11,11 +10,16 @@ int main()
 	cout << " b = ";
 	cin >> c;
 	cout << " c= ";
-	if 
-		((b < c < a) or (a < c < a))
-	    cout << "ac = " << a * c ;
-	    cout << "bc = " << b * c;
-		cout << "Произведение = ";
-	else
+	if ((a < c < b) and (b < c < a))
+		cout << "ac = " << a * c;
+	else 
+		cout << "Введите другое c";
+	if ((a < c < b) and (b < c < a))
+		cout << "bc = " << b * c;
+	else 
+		cout << "Введите другое c";
+	if ((a < c < b) and (b < c < a))
+		cout << "Произведение = " << ac * bc;
+	else 
 		cout << "Введите другое c";
 }
