@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int a, b, c, ac, bc;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "a= ";
+	cin >> a;
+	cout << "b= ";
+	cin >> b;
+	cout << "c= ";
+	cin >> c;
+	if (a > c)
+		ac = a - c;
+	else
+		ac = c - a;
+	cout << "Длина ca = " << ac;
+	if (b > c)
+		bc = b - c;
+	else
+		bc = c - b;
+	cout << "Длина bc = " << bc;
+	cout << "Сумма = " << ac + bc;
+}
