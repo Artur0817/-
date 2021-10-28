@@ -4,22 +4,18 @@ int a, b, c, ac, bc;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	cin >> a;
 	cout << " a = ";
-	cin >> b;
+	cin >> a;
 	cout << " b = ";
-	cin >> c;
+	cin >> b;
 	cout << " c= ";
-	if ((a < c < b) and (b < c < a))
-		cout << "ac = " << a * c;
-	else 
-		cout << "Введите другое c";
-	if ((a < c < b) and (b < c < a))
-		cout << "bc = " << b * c;
-	else 
-		cout << "Введите другое c";
-	if ((a < c < b) and (b < c < a))
-		cout << "Произведение = " << ac * bc;
-	else 
+	cin >> c;
+	if ((a < c < b) or (b < c < a))
+	{
+		cout << "ac = " << a * c << "\n";
+		cout << "bc = " << b * c << "\n";
+		cout << "Произведение = " << ac * bc << "\n";
+	}
+	else
 		cout << "Введите другое c";
 }
