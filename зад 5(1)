@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	float dis, x1, x2, y1, y2;
+	float ras, x1, x2, y1, y2;
 	cout << "x1= ";
 	cin >> x1;
 	cout << "x2= ";
@@ -13,6 +13,6 @@ int main()
 	cin >> y1;
 	cout << "y2= ";
 	cin >> y2;
-	dis = sqrt(pow(abs(x2 - x1), 2) + pow(abs(y2 - y1), 2));
-	cout << "Расстояние= " << dis;
+	ras = sqrt(pow(abs(x2 - x1), 2) + pow(abs(y2 - y1), 2));
+	cout << "Расстояние= " << ras;
 }
