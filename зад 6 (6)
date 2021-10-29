@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int a, x;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "a=";
+	cin >> a;
+	x = a;
+	x = x * a; 
+	x = x * x; 
+	x = x * x; 
+	cout << "a^ = " << x;
+}
