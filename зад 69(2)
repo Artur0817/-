@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int a, b, c, x;
+int main() 
+{
+	cout << "a= ";
+	cin >> a;
+	cout << "b= ";
+	cin >> b;
+	cout << "c= ";
+	cin >> c;
+	x = b;
+	b = c;
+	c = a;
+	a = x;
+	cout << "a= " << a << "\n";
+	cout << "b= " << b << "\n";
+	cout << "c= " << c;
+}
