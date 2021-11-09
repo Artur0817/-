@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B, Y;
+	cout << "A:";
+	cin >> A;
+	cout << "B:";
+	cin >> B;
+	if (A > B)
+	{
+		Y = A / B;
+		cout << "Количество В на A:" << Y;
+	}
+	else
+	{
+		cout << "Решения нет";
+	}
+}
