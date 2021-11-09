@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float V1, V2, S1, S2, T;
+	cout << "Скорость первого автомобиля.";
+	cout << "\n";
+	cout << "V1 = ";
+	cin >> V1;
+	cout << "Скорость второго автомобиля.";
+	cout << "\n";
+	cout << "V2 = ";
+	cin >> V2;
+	cout << "Расстояние между ними.";
+	cout << "\n";
+	cout << "S1 = ";
+	cin >> S1;
+	cout << "Время";
+	cout << "\n";
+	cout << "T = ";
+	cin >> T;
+	S2 = S1 + T * (V1 + V2);
+	cout << "Расстояние между авотмобилями через " << T << " часов, если автомобили удаляются друг от друга " << S2;
+	return 0;
+}
