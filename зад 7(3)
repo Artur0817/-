@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+#define pi 3.14
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float A, T, kg, Y;
+	cout << "Количество кг конфет =";
+	cin >> A;
+	cout << "Стоимость " << A << " кг конфет";
+	cout << "\n";
+	cout << "T = ";
+	cin >> T;
+	kg = (float)T / A;
+	cout << "Сколько кг конфет вам надо?";
+	cout << "\n";
+	cout << "У = ";
+	cin >> Y;
+	cout << "Один кг конфет: " << kg;
+	cout << "\n";
+	cout << "Стоимость " << Y << " кг конфет " << kg * Y;
+	return 0;
+}
