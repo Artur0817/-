@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int A, B, Y;
+	cout << "A:";
+	cin >> A;
+	cout << "B:";
+	cin >> B;
+	if (A > B)
+	{
+		Y = A % B;
+		cout << "Незанятая часть отрезка A" << Y;
+	}
+	else
+	{
+		cout << "Решения нет";
+	}
+	return 0;
+}
