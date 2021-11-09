@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int x, y;
+	cout << "Колличество байт:" << endl;
+	cin >> x;
+	y = x / 1024;
+	cout << x << " Ответ: " << y << " полных Килобайт";
+}
