@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+#define pi 3.14
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float x, r;
+	cout << "Введите значение угла в градусах.";
+	cout << "\n";
+	cout << "x = ";
+	cin >> x;
+	r = (float)(pi * x) / 180;
+	cout << "Угол " << x;
+	cout << "° имеет " << r << " радиан";
+	return 0;
+}
