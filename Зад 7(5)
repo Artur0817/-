@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float A, B;
+	cout << "Введите А:";
+	cout << "\n";
+	cout << "А = ";
+	cin >> A;
+	cout << "Введите B:";
+	cout << "\n";
+	cout << "B = ";
+	cin >> B;
+	if (A != 0)
+	{
+		cout << "Уравнение A•x + B = 0 ==" << -1 * B / A;
+	}
+	else
+	{
+		cout << "Решения нет";
+	}
+	return 0;
+}
