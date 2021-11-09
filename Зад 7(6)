@@ -1,0 +1,46 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float x, y, A1, B1, A2, B2, C1, C2, Z;
+	cout << "A1 = ";
+	cout << "\n";
+	cin >> A1;
+	cout << "B1 = ";
+	cout << "\n";
+	cin >> B1;
+	cout << "C1 = ";
+	cout << "\n";
+	cin >> C1;
+	cout << "A2 = ";
+	cout << "\n";
+	cin >> A2;
+	cout << "B2 = ";
+	cout << "\n";
+	cin >> B2;
+	cout << "C2 = ";
+	cout << "\n";
+	cin >> C2;
+	Z = A1 * B2 - A2 * B1;
+	if (Z != 0) 
+	{
+		x = (C1 * B2 - C2 * B1) / Z;
+		y = (A1 * C2 - A2 * C1) / Z;
+		if (x == -0) 
+		{
+			x = 0;
+		}
+		if (y == -0) 
+		{
+			y = 0;
+		}
+		cout << "\n x = " << x << " y = " << y << endl;
+	}
+	else 
+	{
+		cout << " A1*B2 - A2*B1 = 0" << endl;
+	}
+	return 0;
+}
