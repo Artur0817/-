@@ -4,16 +4,14 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int a, b, c, d, f, g, h;
+	int a, b, c, d, f;
 	cout << "a=";
 	cin >> a;
-	b = a / 1000;
-	c = a % 1000;
-	d = c / 100;
-	f = c % 100;
-	g = f / 10;
-	h = f % 10;
-	if (b==h && d==g)
+	b = a / 100;
+	c = a % 100;
+	d = c / 10;
+	f = c % 10;
+	if (b<d && d<f || b>d && d>f)
 	{
 		cout << "Высказывание истинно!";
 	}
@@ -23,3 +21,4 @@ int main()
 	}
 	return 0;
 }
+
