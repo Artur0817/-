@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int d, e, f;
+	cout << "1-ый угол:";
+	cin >> d;
+	cout << "2-ой угол:";
+	cin >> e;
+	cout << "3-ий угол:";
+	cin >> f;
+	if (d + e + f == 180)
+	{
+		cout << "Высказывание истинно!";
+	}
+	else
+	{
+		cout << "Высказывание ложно!";
+	}
+	return 0;
+}
