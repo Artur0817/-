@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, c, d, f, g, h;
+	cout << "a=";
+	cin >> a;
+	b = a / 1000;
+	c = a % 1000;
+	d = c / 100;
+	f = c % 100;
+	g = f / 10;
+	h = f % 10;
+	if (b==h && d==g)
+	{
+		cout << "Высказывание истинно!";
+	}
+	else
+	{
+		cout << "Высказывание ложно!";
+	}
+	return 0;
+}
