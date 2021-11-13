@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int k, n, d;
+	cout << "Введите день:";
+	cin >> k;
+	cout << "1 января день недели:";
+	cin >> n;
+	n = n - 2;
+	d = ((k + n) % 7)+1;
+	cout << "День недели:" << d;
+	return 0;
+}
