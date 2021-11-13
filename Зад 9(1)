@@ -1,0 +1,13 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Russian");
+	int n, s;
+	cout << "Введите кол-во секунд:";
+	cin >> n;
+	s = n % 60;
+	cout << "Кол-во прошедших секунд, с начала последней минуты = " << s;
+	return 0;
+}
