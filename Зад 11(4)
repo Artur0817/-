@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int y, x;
+    cout << "x:";
+    cin >> x;
+    cout << "y:";
+    cin >> y;
+    if (x > 0 && y > 0)
+    {
+        cout << "Точка находится в 1-ой четверти!";
+    }
+    else
+    {
+        if (x < 0 && y>0)
+        {
+            cout << "Точка находится во 2-ой четверти!";
+        }
+        else
+        {
+            if (x < 0 && y < 0)
+            {
+                cout << "Точка находится в 3-ей четверти!";
+            }
+            else
+            {
+                cout << "Точка находится в 4-ой четверти!";
+            }
+        }
+    }
+    return 0;
+}
