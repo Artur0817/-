@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c, r;
+    cout << "a:";
+    cin >> a;
+    cout << "b:";
+    cin >> b;
+    cout << "c:";
+    cin >> c;
+    if (abs(a - b) < abs(a - c))
+    {
+        r = abs(a - b);
+        cout << "Ближе точка b, она находится на расстоянии =" << r;
+    }
+    else
+    {
+        r = abs(a - c);
+        cout << "Ближе точка c, она находится на расстоянии =" << r;
+    }
+    return 0;
+}
