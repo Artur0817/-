@@ -1,0 +1,38 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b;
+    cout << "a:";
+    cin >> a;
+    cout << "b:";
+    cin >> b;
+    if (a == b)
+    {
+        a = 0;
+        b = 0;
+        cout << "Новое значение переменной a:" << a;
+        cout << "Новое значение переменной b:" << b;
+    }
+    else
+    {
+        if (a > b)
+        {
+            a = a;
+            b = a;
+            cout << "Новое значение переменной a:" << a;
+            cout << "Новое значение переменной b:" << b;
+        }
+        else
+        {
+            a = b;
+            b = b;
+            cout << "Новое значение переменной a:" << a;
+            cout << "Новое значение переменной b:" << b;
+        }
+
+    }
+    return 0;
+}
