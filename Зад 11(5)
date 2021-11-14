@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int y;
+    cout << "y:";
+    cin >> y;
+    if (y == 0)
+    {
+        cout << "Число нулевое";
+    }
+    else
+    {
+        if ((y % 2) == 0)
+        {
+            cout << "Число четное";
+        }
+        else
+        {
+            cout << "Число нечетное";
+        }
+    }
+    return 0;
+}
