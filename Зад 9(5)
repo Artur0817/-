@@ -4,10 +4,18 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int g, n;
+	int g, n, x;
 	cout << "Введите год:";
 	cin >> g;
-	n = (g / 100) + 1;
-	cout << "Номер столетия:" << n;
+	if (g % 100 == 0)
+	{
+		x = g / 100;
+		cout << "Номер столетия:" << x;
+	}
+	else
+	{
+		n = (g / 100) + 1;
+		cout << "Номер столетия:" << n;
+	}
 	return 0;
 }
