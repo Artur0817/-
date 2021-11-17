@@ -11,14 +11,14 @@ int main()
     cin >> b;
     cout << "c:";
     cin >> c;
-    if (a < b && b < c)
+    if (a <= b && b <= c)
     {
         s = b + c;
         cout << "Сумма наибольших чисел равна:" << s;
     }
     else
     {
-        if (b < a && a < c)
+        if (b <= a && a <= c)
         {
             s = a + c;
             cout << "Сумма наибольших чисел равна:" << s;
