@@ -4,20 +4,16 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int d, e, f;
-	cout << "1-ый угол:";
-	cin >> d;
-	cout << "2-ой угол:";
-	cin >> e;
-	cout << "3-ий угол:";
-	cin >> f;
-	if (d + e + f == 180)
-	{
-		cout << "Высказывание истинно!";
-	}
-	else
-	{
-		cout << "Высказывание ложно!";
-	}
-	return 0;
+	int a, b;
+	cout << "Введите кол-во байт";
+	cin >> a;
+	b = a / 1024;
+		if (a % 1024 == 0)
+		{
+			cout << "Кол-во килобайт:" << b;
+		}
+		else
+		{
+			cout << "Кол-во килобайт:" << b + 1;
+		}
 }
