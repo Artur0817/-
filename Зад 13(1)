@@ -1,0 +1,15 @@
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+
+    setlocale(LC_ALL, "Russian");
+    float a, b;
+    cout << "a:";
+    cin >> a;
+    for (b = 0.1; b < 1.1; b += 0.1)
+        cout << b << "=" << a * b << endl;
+    return 0;
+}
