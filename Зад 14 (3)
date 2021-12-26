@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b = 1, SUM = 1;
+	cout << "a = ";
+	cin >> a;
+	if (a > 1)
+	{
+		while (a > SUM)
+		{
+			b++;
+			SUM += b;
+		}
+		cout << "Наименьшее из целых чисел K = " << b;
+		cout << "Сумма = " << SUM;
+	}
+	else
+	{
+		cout << "Введите другое число!";
+	}
+	return 0;
+}
