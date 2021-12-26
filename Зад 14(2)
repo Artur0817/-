@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	if ((a > b) & (a > 0) & (b > 0))
+	{
+		while ((a - b) >= 0)
+		{
+			a = a - b;
+		}
+		cout << "Длинa незанятой части =" << a;
+	}
+	else
+	{
+		cout << "Введите другие числа!";
+	}
+	return 0;
+}
