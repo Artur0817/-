@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	if (b == 0) 
+	{
+		cout << "НОД = " << a;
+	}
+	else if (a == 0) 
+	{
+		cout << "НОД = " << b;
+	}
+	else 
+	{
+		while (a != b)
+		{
+			if (a > b)
+				a -= b;
+			else
+				b -= a;
+		}
+		cout << "НОД = " << a;
+	}
+	return 0;
+}
