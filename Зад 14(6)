@@ -1,0 +1,31 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int fib(int n) 
+{
+	setlocale(LC_ALL, "Russian");
+	int f = 0;
+	int res = 1;
+	int f0 = 1;
+	int x = 0;
+	while (x <= n) {
+		res = f;
+		f = f0 + f;
+		f0 = res;
+		x++;
+		if (n == f)
+			return x;
+	}
+	if (n == 0)
+		return 0;
+	else return -1;
+}
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout << "Введите целое число N: ";
+	cin >> n;
+	cout << "Порядковый номер K числа Фибоначчи N: " << fib(n);
+	return 0;
+}
