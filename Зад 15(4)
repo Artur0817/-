@@ -1,0 +1,36 @@
+#include<iostream>
+int quarter(double x, double y)
+{
+    if ((x > 0)and(y > 0))
+    {
+        return 1; 
+    }
+    if ((x < 0) and (y > 0))
+    { 
+        return 2;
+    }
+    if ((x < 0) and (y < 0))
+    {
+        return 3;
+    }     
+    if ((x > 0) and (y < 0))
+    {
+        return 4;
+    }
+}
+
+int main()
+{
+    using namespace std;
+    int i;
+    for (i = 1; i <= 3; ++i) 
+    {
+        double x, y;
+        cout << "X=" << endl;
+        cin >> x;
+        cout << "Y=" << endl;
+        cin >> y;
+        cout<< quarter(x, y);
+    }
+    return 0;
+}
