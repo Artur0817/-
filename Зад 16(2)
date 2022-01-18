@@ -1,0 +1,21 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	int N, A, D;
+	cout << "Введите N (N>1)" << endl;
+	cin >> N;
+	cout << "Введите A" << endl;
+	cin >> A;
+	cout << "Введите D" << endl;
+	cin >> D;
+	int* arr = new int[N];
+	for (int i = 0; i <= N; i++) 
+  {
+		arr[i] = A * pow(D, i);
+		cout << arr[i]<<" ";
+	}
+	return 0;
+}
